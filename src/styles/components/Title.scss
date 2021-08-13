@@ -1,0 +1,25 @@
+@import 'Vars.scss';
+
+h1 {
+  color: $title-color; 
+  font-size: 25px; 
+  margin: 20px; 
+  padding: 5% 10% 2% 10%; 
+}
+
+.TitleContainer {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+@media screen and (max-width: $mobile) {
+  .menu-item {
+    min-width: 150px;
+  }
+
+  .App-header {
+    flex-direction: column;
+  }
+}
+

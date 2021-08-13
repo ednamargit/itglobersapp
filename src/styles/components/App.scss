@@ -1,0 +1,18 @@
+@import 'Vars.scss';
+
+.App {
+  font-family: 'Rubik', sans-serif;
+}
+
+.App-header {
+  background: linear-gradient($primary-color, $gradient-color);
+  min-height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.Active {
+  background-color: $active-color; 
+}

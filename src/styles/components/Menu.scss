@@ -1,0 +1,32 @@
+@import 'Vars.scss';
+
+.menu-list {
+  text-align: center;
+}
+
+.menu-item {
+  display: inline-block;
+  font-size: 18px;
+  padding: 15px;
+  background-color: $menu-item-color;
+  min-width: 125px;
+  color: $color-item; 
+  font-weight: 300;
+  cursor: pointer;
+  margin: 20px; 
+}
+
+@media screen and (max-width: $mobile) {
+  .menu-item {
+    min-width: 150px;
+  }
+
+  .menu-list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .App-header {
+    flex-direction: column;
+  }
+}

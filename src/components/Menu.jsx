@@ -1,12 +1,9 @@
 import React from 'react';
+import '../styles/components/Menu.scss'; 
 
-function Menu({ name }) {
+function Menu({ id, name, handleClick }) {
   return( 
-   <div>
-     <ul>
-       <li>{name}</li>
-     </ul>
-   </div>
+    <li onClick={handleClick} id={id} name={name} className="menu-item">{name}</li>
   )
 }; 
 

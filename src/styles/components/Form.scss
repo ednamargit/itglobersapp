@@ -1,0 +1,68 @@
+@import 'Vars.scss';
+
+label {
+  font-size: 20px;
+}
+
+input {
+  &[type="submit"] {
+    background-color: $call-to-action;
+    color: $color-item; 
+    width: 10%; 
+    font-size: 20px;
+    justify-content: center;
+    font-weight: 300;
+    padding-bottom: 35px;
+    border-radius: 20px;
+  }
+}
+
+input {
+  display: flex;
+  border-radius: 8px;
+  border: 1px solid #f5f5f5;
+  width: 50%; 
+  background-color: aliceblue; 
+  height: 30px;
+  padding: 15px;
+  font-size: 18px;
+}
+
+.form-field {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  flex-direction: column;
+  align-content: center;
+}
+
+span {
+  color: red; 
+}
+
+.lightboxClass {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  margin-top: 0; 
+  left: 33%;
+  right: 33%;
+  top: 5%;
+  overflow: auto;
+  background-color: $call-to-action;
+  padding: 5px; 
+  text-align: center;
+  font-size: 17px;
+  border-radius: 2%;
+  color: $color-item;  
+}
+
+@media screen and (max-width: $mobile) {
+  input {
+    &[type="submit"] {
+      font-size: 18px;
+      width: 15%;
+    }
+  }
+}
+
