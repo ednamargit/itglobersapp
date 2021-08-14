@@ -6,6 +6,7 @@ export default function Form() {
   const { register, handleSubmit, setValue, formState: { errors } } = useForm();
 
   function openModal() {
+    document.getElementById("lightbox").style.visibility = "visible";
     document.getElementById("lightbox").style.display = "block";
   }
 
@@ -48,10 +49,7 @@ export default function Form() {
     setValue("phone", "");
     setValue("age", "");
   }
-
-  useEffect(() => {
-  }, [onSubmit]); 
-  
+ 
 
   return (
     <form onSubmit={handleSubmit(onSubmit)}>
